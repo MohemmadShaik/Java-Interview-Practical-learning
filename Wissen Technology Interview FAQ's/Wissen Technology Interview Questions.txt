@@ -1,0 +1,95 @@
+Kindly be prepared for the below questions?
+===========================================
+
+Question 1:
+- - - - - -
+
+Scenario:
+^^^^^^^^
+You have to design a solution (classes, interfaces, etc etc) for DeckofCards. 
+Each card has a suit (heart, spade, club, diamond) and 
+a rank (ace, king, queen jack, 10, 9, 8, 7, 6, 5, 4, 3, 2). 
+
+Problem 1 - Write a function to Compare two cards and return bigger one. Suit doesnt matter. 
+Problem 2 - You are given a shuffled deck of cards. You have to sort them (by suit and then by rank) 
+
+Problem 1 - Is the function signature correctly implemented (2 args which represent the 2 cards) and returns a card?.
+			What if a Joker is introduced in the pack. How will you represent a Joker ?.
+			Are the Cards, Deck Suit, Rank properly represented with Enums, Classes, Objects.
+Problem 2 - Is the Candidate aware of Comparator and Comparable interfaces ?.
+
+Problem 1 - Is the logic correctly implemented (comparison, null checks).
+Problem 2 - Is the comparator logic correctly implemented ?.
+
+Question 2:
+- - - - - -
+
+Can one use an Employee class as a key in a HashMap? 
+( This is a very important question. If this is not answered satisfactorily, mark the
+  candidate as knowledge gap as best case scenario irrespective of answers to other
+  questions / scenarios )
+
+Question 3:
+===========
+Consider a class A with a synchronized method
+ class A { 
+	public void synchronized m1() {
+						Thread.sleep(5000);
+    } 
+  } 
+
+We create two objects of this class - o1 and o2. 
+We call o1.m1() on one thread and o2.m1() on another thread, at the same time. 
+What will be the behaviour? 
+Follow up with - how will you force these calls to execute one after the other
+
+Question 4:
+- - - - - -
+
+Flatten nested arrays in java. 
+1. Numbers or nested arrays can be upto n levels. 
+2. Recursive approach -
+Employee Table -- Id -- Name -- Salary -- Department id 
+Find one employee from each department who is getting the highest salary within his department. 
+Discuss further on server side pagination, boundary cases like 2 emp getting the same salary in the same department which is highest etc.
+
+Question 5:
+- - - - - -
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, Merge nums1 and nums2 into a single array sorted in non-decreasing order
+
+Question 6 :
+- - - - - -
+Find Out the Correct Output for Below Code. 
+Check whether candidate knows about wheteher static methods are not polymorphic or not. 
+Code: 
+=====
+
+	class Parent { 
+		static void staticMethod() { 
+			System.out.println("Static method in Parent"); 
+		}
+		
+	} 
+	class Child extends Parent {
+       static void staticMethod() {
+			System.out.println("Static method in Child"); 
+	   } 
+	} 
+	public class StaticMethodTest {
+		public static void main(String[] args) {
+			Parent.staticMethod();
+			Child.staticMethod();
+			Parent parent = new Child(); 
+			parent.staticMethod(); 
+		} 
+	}
+	
+Question 7:
+- - - - - -
+Given an array containing n integers. The problem is to find the sum of the elements of
+the contiguous subarray having the smallest(minimum) sum. 
+Input : arr[] = {3, -4, 2, -3, -1, 7, -5} 
+Output : -6 
+Subarray is {-4, 2, -3, -1} = -6 
+Input : arr = {2, 6, 8, 1, 4} 
+Output : 1
