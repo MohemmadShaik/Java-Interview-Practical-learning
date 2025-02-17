@@ -37,7 +37,7 @@ class Child extends Parent {
         System.out.println("Static method in Child"); 
    } 
 } 
-public class StaticMethodTest {
+public class Question6_StaticMethodTest {
     public static void main(String[] args) {
         Parent.staticMethod(); //Calls the static method defined in the Parent class
         Child.staticMethod(); //Calls the static method defined in the Child class.

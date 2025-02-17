@@ -1,0 +1,43 @@
+We must and should know collections concepts  in java  then only will know the exact difference between Comparator and Comparable.
+
+Actually Comparator and Comparable concepts come into picture when  we want to sort the collection objects in ascending or descending order.
+
+So let's cover the below topics related to collections:
+
+1. Collection API, collection and collections
+2. ArrayList in java
+3. Set in java
+4. Map in java
+5. Comparator VS Comparable in java
+
+
+1. Collection API, collection and collections
+=============================================
+
+Collection API --> it's a concept
+
+The collection API is introduced in Java 1.2 version to 
+work with all data structures by using some inbuilt classes and interfaces.
+
+Inshort :
+- When dealing with Collection API concepts, we have 
+  multiple classes and interfaces to work with.
+
+- By using Collection API we can store data and we can use
+  different algorithms to work with it.
+
+collection --> If we are dealing with interface
+The root interface for most of the collection types.
+Common implementation for List, Set, Queue Interfaces.
+collections --> If we are dealing with classes
+A utility class with static methods for collection operations (e.g., sorting, searching).
+Provides methods like sort(), reverse(), and synchronizedList().
+
+Key Note : Both collection and collections can be found in java.util. package.
+--------
+
+Q) How to implement the collection?
+
+We can implement collection using either List, Set , Queue or Map.
+
+

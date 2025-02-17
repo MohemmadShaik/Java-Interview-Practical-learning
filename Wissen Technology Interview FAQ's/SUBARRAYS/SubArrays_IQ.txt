@@ -1,0 +1,73 @@
+Question 7 :
+- - - - - -
+Given an array containing n integers. 
+The problem is to find the sum of the elements of
+the contiguous subarray having the smallest(minimum) sum. 
+Statement 1 : Input : arr[] = {3, -4, 2, -3, -1, 7, -5} 
+              Output : -6 
+              Subarray is {-4, 2, -3, -1} = -6 
+Statement 2 : Input : arr = {2, 6, 8, 1, 4} 
+              Output : 1
+
+
+Note : WE can solve this problem in 3 ways :
+ 1st using Kadane's Algorithm approach (Most efficient and best way compare to preixsum, brute force approach) -->  time complexity = o(n)
+           key Reminder : - Kadane's algorithm is majorly used to find maximum sum of a subarray.
+                          - In Kadane's algorithm -ve number is reset to 0 , because as per Kadane's -ve number is useless.
+                          - Only 1 for loop is used so the time complexity is O(n).
+                          - Here only two variables are used : 
+                               int  currentSum =0 , 
+                               int  maximumSum = Integer.MIN_VALUE
+                          - These two variables stores values parallely.
+                          for(int i=0; i<givenarr.length; i++){
+                            currentSum += givenarr[i];
+
+                             if(currentSum < maximumSum){
+                                maximumSum = currentSum;
+                             }
+
+                          }
+                                 System.out.println (maximumSum);
+
+-----------------------------------> Kadane Algorithm End <-------------------------------------------------------------
+
+ 2nd using PrefixSum approach (better compare to brute force approach) --> time complexity = o(n^2)
+             Key Reminder : - We create a new a array called prefix[] with the same length of the given array to calculate and store the prefix sum.
+                            - By default we will initialize the prefix[0] = givenarr[0], Such that the first index value of both the arrays should be same to calculate the cummulative sum (or) prefix sum correctly.
+                            
+                            // Step 1: Compute the prefix sum array
+                            - First will calculate prefix sum array or cummulative sum array
+                              using one for loop : for(int i=1; i<prefix.length; i++)
+                              and the formula : 
+                              prefix[i] = prefix[i-1] + givenarr[i] 
+
+                            // Step 2 : Initailize minSum and maxSum
+
+                              int max_sum = Integer.MIN_VALUE; //-infinity
+                              int min_sum = Integer.MAX_VALUE; //+infinity
+                            
+                            // Step 3: Calculate subarray sums using prefix sum
+                            - Now will use two for loops, one for start and the other for loop for end 
+                              and will use the below formula to calculate the subarray sum :
+                              
+                                int subarraySum = (i == 0) ? prefix[j] : (prefix[j] - prefix[i - 1]);
+
+                                Note : Here start =i, end = j;
+                            
+                            // Step 4 : Update minSum and maxSum
+
+                            if (subarraySum > max_sum) {
+                                  max_sum = subarraySum;
+                              }
+                            
+                            if (subarraySum < min_sum) {
+                                 min_sum = subarraySum;
+                              }
+
+-----------------------------------> PrefixSum End <-------------------------------------------------------------                         
+                              
+ 3rd using Brute Force approach (Normal way ) -- > time complexity = o(n^3)
+
+
+
+//1st using Kadane's algorithm to find the maxSum of the elements of the contiguous subarray
