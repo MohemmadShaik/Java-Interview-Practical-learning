@@ -10,7 +10,7 @@ Statement 2 : Input : arr = {2, 6, 8, 1, 4}
               Output : 1
 
 
-Note : WE can solve this problem in 3 ways :
+Note : We can solve this problem either using Kadane's Algorithm (or) PrefixSum approach (or) Brute Force approach as well.
  1st using Kadane's Algorithm approach (Most efficient and best way compare to preixsum, brute force approach) -->  time complexity = o(n)
            key Reminder : - Kadane's algorithm is majorly used to find maximum sum of a subarray.
                           - In Kadane's algorithm -ve number is reset to 0 , because as per Kadane's -ve number is useless.
