@@ -70,4 +70,7 @@ Note : We can solve this problem either using Kadane's Algorithm (or) PrefixSum 
 
 
 
-//1st using Kadane's algorithm to find the maxSum of the elements of the contiguous subarray
+//Using Kadane's algorithm we can find maximumSum and minimumSum of the elements of the contiguous subarray
+
+//PART-1 --> find maximumSum of the contiguous subarray
+
