@@ -1,3 +1,5 @@
+//PART-B : Adding heading to the minSum of subarray and also updating minSum trace the currentSum, minSum values.
+
 package PART1_KadaneAlgorithm;
 
 public class Problem3_Rivision_KA_SubArray_MIN {
