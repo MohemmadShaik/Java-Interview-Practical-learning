@@ -1,5 +1,5 @@
 //Using Kadane's algorithm we can find maximumSum and minimumSum of the elements of the contiguous subarray
-
+//Time complexity: O(n)
 //PART-1 --> find maximumSum of the contiguous subarray
 
 public class Question7_Part1_KA_MaxSUM{
@@ -27,4 +27,11 @@ public class Question7_Part1_KA_MaxSUM{
 	} 
 }
 
-//Time complexity: O(n)
+
+
+/*
+ OUTPUT :
+ -------
+Max sum number is : 7
+ 
+ */

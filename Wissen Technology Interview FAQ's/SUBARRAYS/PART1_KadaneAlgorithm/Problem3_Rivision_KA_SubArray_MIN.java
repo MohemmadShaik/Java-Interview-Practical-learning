@@ -15,6 +15,22 @@
    
     Keypoint very important : replace the Math.min() with start, end, tempStart varibles.
 
+
+OUTPUT:
+======
+
+            Index | Current Element | currentSum | minSum | reset?
+            ----------------------------------------------------------
+                0                3            3 2147483647   reset to 0
+                1               -4           -4          3     no reset
+                2                2           -2         -4     no reset
+                3               -3           -5         -4     no reset
+                4               -1           -6         -5     no reset
+                5                7            1         -6   reset to 0
+                6               -5           -5         -6     no reset
+            
+            Subarray : { -4, 2, -3, -1  } --> minSum : -6
+
 */
 package PART1_KadaneAlgorithm;
 

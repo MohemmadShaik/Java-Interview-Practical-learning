@@ -13,6 +13,18 @@ Statement 3 : given array: {-1,-3,-6,-2,-5}
 
 Q2) Can you please debug the code to know how the currentSum and maxSum are changing in each iteration?
 
+OUTPUT: 
+======
+         Index | Current Element | Current Sum |  Max Sum    |   Reset Current Sum?
+         ------------------------------------------------------------------------------
+             0 |              -1 |          -1 | -2147483648 |          reset to 0
+             1 |              -3 |          -3 |          -1 |          reset to 0
+             2 |              -6 |          -6 |          -1 |          reset to 0
+             3 |              -2 |          -2 |          -1 |          reset to 0
+             4 |              -5 |          -5 |          -1 |          reset to 0
+         
+         MaxSum using Kadane's Algorithm : -1
+
 */
 package PART1_KadaneAlgorithm;
 

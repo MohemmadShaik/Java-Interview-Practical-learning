@@ -26,6 +26,21 @@ Statement 3 : given array: {-1,-3,-6,-2,-5}
 
 Q2) Can you please debug the code to know how the currentSum and maxSum are changing in each iteration?
 
+OUTPUT :
+========
+
+
+             Index | Current Element | CurrentSum | MinSum | Reset?
+            -------------------------------------------------------------
+                0                3          3    2147483647   reset to 0
+                1               -4         -4             3     No reset
+                2                2         -2            -4     No reset
+                3               -3         -5            -4     No reset
+                4               -1         -6            -5     No reset
+                5                7          1            -6   reset to 0
+                6               -5         -5            -6     No reset
+            
+            Min Subarray is { -4, 2, -3, -1  } --> MinSum : -6
 
 
 */

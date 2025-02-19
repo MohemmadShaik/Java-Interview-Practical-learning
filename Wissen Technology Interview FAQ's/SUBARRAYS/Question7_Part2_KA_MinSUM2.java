@@ -22,11 +22,12 @@ public class Question7_Part2_KA_MinSUM2 {
             }
         }
 
-        System.out.print("Min sum subarray: [");
+        System.out.print("\nMin sum subarray: [");
         for (int i = startIndex; i <= endIndex; i++) {
             System.out.print(arr[i] + (i < endIndex ? ", " : ""));
         }
-        System.out.println("] with sum: " + minimumSum);
+        System.out.println("] with MinSum: " + minimumSum);
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -35,3 +36,11 @@ public class Question7_Part2_KA_MinSUM2 {
         part3_ka_minSum(arr);
     }
 }
+
+
+/*
+ OUTPUT :
+ ======
+Min sum subarray: [-4, 2, -3, -1] with MinSum: -6
+
+ */

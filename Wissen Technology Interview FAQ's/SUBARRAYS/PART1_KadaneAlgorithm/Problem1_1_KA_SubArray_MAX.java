@@ -1,6 +1,19 @@
 /* Problem1_1_KA_SubArray is the same as PART1_KadaneAlgorithm/Problem1_KA_SubArray.java
 but with the debug info added to the output.
 
+OUTPUT:
+======
+        Index | Current Element | Current Sum |    Max Sum  | Reset Current Sum?
+        -----------------------------------------------------------------------------
+            0 |               3 |           3 | -2147483648 |                NO
+            1 |              -4 |          -1 |           3 |        reset to 0
+            2 |               2 |           2 |           3 |                NO
+            3 |              -3 |          -1 |           3 |        reset to 0
+            4 |              -1 |          -1 |           3 |        reset to 0
+            5 |               7 |           7 |           3 |                NO
+            6 |              -5 |           2 |           7 |                NO
+        
+        MaxSum Subarray: { 7 } ---> MaxSum: 7
 
 */
 

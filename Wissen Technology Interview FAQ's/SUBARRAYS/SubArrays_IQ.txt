@@ -68,9 +68,34 @@ Note : We can solve this problem either using Kadane's Algorithm (or) PrefixSum 
                               
  3rd using Brute Force approach (Normal way ) -- > time complexity = o(n^3)
 
+Step 1 :
+=======
+          int maxSum = Integer.MIN_VALUE;
+          int minSum = Integer.MAX_VALUE;
+Step 2 :
+======= 
+1st for loop i: start
+2nd for loop j : end
 
+Step 3 :
+=======
+Here we will initialize int currentSum = 0;
 
-//Using Kadane's algorithm we can find maximumSum and minimumSum of the elements of the contiguous subarray
+Step 4 :
+=======
+3rd for loop k : print subarray from start to end
+Here will update the currentSum += arr[k];
 
-//PART-1 --> find maximumSum of the contiguous subarray
+Step 5 : update maxSum and minSum
+=======
+                if(currentSum > maxSum){
+                    maxSum = currentSum;
+                }
 
+                if(currentSum < minSum){
+                    minSum = currentSum;
+                }
+
+Step 6 :
+=======
+finally print minSum and maxSum.

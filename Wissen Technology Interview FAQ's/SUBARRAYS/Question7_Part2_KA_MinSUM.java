@@ -6,7 +6,7 @@ public class Question7_Part2_KA_MinSUM {
     int currentSum = 0;
 	int minimumSum = Integer.MAX_VALUE; //+inifinity
 
-	System.out.println("Index | Current Element | Current Sum | Minimum Sum");
+	System.out.println("\nIndex | Current Element | Current Sum | Minimum Sum");
         System.out.println("---------------------------------------------------");
 
 	
@@ -37,3 +37,24 @@ public class Question7_Part2_KA_MinSUM {
 	 part2_ka_minSum(arr);
 	}
 }
+
+
+/*
+ OUTPUT
+ ------
+
+Index | Current Element | Current Sum | Minimum Sum
+---------------------------------------------------
+    0 |               3 |           3 |  2147483647
+    1 |              -4 |          -4 |           3
+    2 |               2 |          -2 |          -4
+    3 |              -3 |          -5 |          -4
+    4 |              -1 |          -6 |          -5
+    5 |               7 |           1 |          -6
+    6 |              -5 |          -5 |          -6
+
+---------------------------------------------------
+
+ Min sum of subarray : -6
+
+ */
