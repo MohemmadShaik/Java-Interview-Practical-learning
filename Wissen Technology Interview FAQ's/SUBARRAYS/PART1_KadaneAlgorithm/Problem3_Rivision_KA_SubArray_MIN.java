@@ -1,3 +1,7 @@
+//PART-A(main) : To print output as Subarray minSum : -6
+//PART-B(feature-branch-1) : TO print the heading and to trace the changes happening in currentSum, minSum
+//PART-C(feature-branch-2) : To print output as : Subarray is {-4, 2, -3, -1} = -6
+
 package PART1_KadaneAlgorithm;
 
 public class Problem3_Rivision_KA_SubArray_MIN {
