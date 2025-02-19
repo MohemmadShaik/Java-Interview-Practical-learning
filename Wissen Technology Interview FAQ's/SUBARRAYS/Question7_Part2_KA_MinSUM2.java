@@ -30,8 +30,8 @@ public class Question7_Part2_KA_MinSUM2 {
     }
 
     public static void main(String[] args) {
-        //int arr[] = {3, -4, 2, -3, -1, 7, -5};
-        int arr[] =  {2, 6, 8, 1, 4};
+        int arr[] = {3, -4, 2, -3, -1, 7, -5};
+        //int arr[] =  {2, 6, 8, 1, 4};
         part3_ka_minSum(arr);
     }
 }
